@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card" id="card">
+                <div class="card__head">
+                    <div class="display__expression" id="display__expression"></div>
+                    <div class="display__total" id="display__total"></div>
+                </div>
+                <div class="card__body">
+                    <div class="row">
+                        <div class="col operator" id="mod-btn"> mod </div>
+                        <div class="col operator"> pow </div>
+                        <div class="col" id="del-btn"> DEL </div>
+                        <div class="col" id="clear-btn"> C </div>
+                    </div>
+                    <div class="row">
+                        <div class="col number" data-value="7"> 7 </div>
+                        <div class="col number" data-value="8"> 8 </div>
+                        <div class="col number" data-value="9"> 9 </div>
+                        <div class="col operator" id="sub-btn"> &#8722; </i> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col number" data-value="4"> 4 </div>
+                        <div class="col number" data-value="5"> 5 </div>
+                        <div class="col number" data-value="6"> 6 </div>
+                        <div class="col operator" id="division-btn"> &#247; </div>
+                    </div>
+                    <div class="row">
+                        <div class="col number" data-value="1"> 1 </div>
+                        <div class="col number" data-value="2"> 2 </div>
+                        <div class="col number" data-value="3"> 3 </div>
+                        <div class="col operator" id="mul-btn"> &#215; </div>
+                    </div>
+                    <div class="row">
+                        <div class="col number" data-value="0"> 0 </div>
+                        <div class="col number" data-value="."> . </div>
+                        <div class="col operator" id="equal-btn"> &#61; </div>
+                        <div class="col operator" id="plus-btn"> &#43; </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
